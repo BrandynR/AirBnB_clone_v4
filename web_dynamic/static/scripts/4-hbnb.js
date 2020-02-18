@@ -14,7 +14,7 @@ $(document).ready(function () {
       $('DIV#api_status').addClass('available');
     }
   });
-  $('.filters BUTTON').click(function () {
+  $('BUTTON').click(function () {
     $.ajax({
       type: 'POST',
       url: 'http://0.0.0.0:5001/api/v1/places_search/',
