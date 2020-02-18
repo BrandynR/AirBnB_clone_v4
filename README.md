@@ -217,6 +217,8 @@ github repo
 * Kimberly Wong, [kjowong](https://github.com/kjowong) | [@kjowong](https://twitter.com/kjowong) | [kjowong@gmail.com](kjowong@gmail.com)
 * Carrie Ybay, [hicarrie](https://github.com/hicarrie) | [@hicarrie_](https://twitter.com/hicarrie_)
 * Jared Heck, [jarehec](https://github.com/jarehec) | [@jarehec](https://twitter.com/jarehec)
+* Brandyn Reindel, [BrandynR](https://github.com/BrandynR) | [@Optimus_is_Me](https://twitter.com/Optimus_is_Me)
+* Faizan Khan, [b1naryp0et](https://github.com/b1naryp0et) | [@b1nary_p0et](https://twitter.com/b1naryp0et)
 
 ## License
 
