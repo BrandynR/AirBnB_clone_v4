@@ -14,21 +14,21 @@ $(document).ready(function () {
       $('DIV#api_status').addClass('available');
     }
   });
-$('.filters BUTTON').click(function () {
-  $.ajax({
-    type: 'POST',
-    url: 'http://0.0.0.0:5001/api/v1/places_search/',
-    data: '{}',
-    contentType: 'application/json',
-    success: function (result, status, xhr) {
-      const sortedResult = result.sort(function (a, b) {
-        if (a.name < b.name) { return -1; }
-        if (a.name > b.name) {
-          return 1;
-        } else { return 0; }
-      });
-      for (const placeDict of sortedResult) {
-        const place = $(`<article>
+  $('.filters BUTTON').click(function () {
+    $.ajax({
+      type: 'POST',
+      url: 'http://0.0.0.0:5001/api/v1/places_search/',
+      data: '{}',
+      contentType: 'application/json',
+      success: function (result, status, xhr) {
+        const sortedResult = result.sort(function (a, b) {
+          if (a.name < b.name) { return -1; }
+          if (a.name > b.name) {
+            return 1;
+          } else { return 0; }
+        });
+        for (const placeDict of sortedResult) {
+          const place = $(`<article>
                      <div class='title'>
                        <h2>${placeDict.name}</h2>
                        <div class='price_by_night'>
@@ -56,9 +56,9 @@ $('.filters BUTTON').click(function () {
                      ${placeDict.description}
                      </div>
                    </article>`);
-        $('SECTION.places').append(place);
+          $('SECTION.places').append(place);
+        }
       }
-    }
     });
   });
 });
